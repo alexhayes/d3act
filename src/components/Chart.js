@@ -33,6 +33,7 @@ export default class Chart extends React.Component {
     }
 
     componentDidUpdate() {
+        this.chart.props = this.props;
         this.chart.update(this.props.data);
     }
 
